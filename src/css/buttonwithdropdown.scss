@@ -1,0 +1,20 @@
+div.dropdown {
+  position: relative;
+  display: inline-block;
+
+  div.dropdown-header {
+    display: flex;
+  }
+
+  div.toggle-dropdown {
+    width: 12px;
+    margin-left: 0;
+    background-image: url(../img/dropdown.svg);
+  }
+
+  div.dropdown-list {
+    display: block;
+    position: absolute;
+    z-index: 100;
+  }
+}

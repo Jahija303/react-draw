@@ -1,0 +1,44 @@
+div.dropdown.content {
+  user-select: none;
+  position: relative;
+  border: 1px solid rgba(12, 12, 12, 0.4);
+
+  &.disabled {
+    background-color: rgba(12, 12, 12, 0.4);
+  }
+
+  div.button {
+    margin: 0 auto;
+    display: flex;
+    width: 35px;
+    height: 25px;
+    justify-content: center;
+  }
+
+  div.dropdown-button {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  div.dropdown-list {
+    flex-direction: column;
+    margin: 0 -1px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgba(12, 12, 12, 0.4);
+    border-bottom: none;
+
+    div.button {
+      width: 100%;
+      border-bottom: 1px solid rgba(12, 12, 12, 0.4);
+
+      &:hover {
+        background-color: rgba(12, 12, 12, 0.1);
+      }
+    }
+  }
+}

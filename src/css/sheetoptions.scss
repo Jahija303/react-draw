@@ -1,0 +1,159 @@
+#sheet-options {
+  height: 45px;
+  background-color: rgb(238, 112, 227);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left:10px;
+  
+  div.page-navigate {
+    display: flex;
+
+    div.button.backward,
+    div.button.forward {
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+      margin: 0;
+    }
+  }
+
+  div.add-page {
+    display: flex;
+    align-items: center;
+  }
+
+  div.toggle-options {
+    display: flex;
+
+    div.button-container {
+      padding: 3px;
+      margin-right: 3px;
+      border-radius: 3px;
+      border: 1px solid transparent;
+
+      &.toggled {
+        &:hover {
+          border: 1px solid transparent;
+        }
+      }
+
+      &:hover {
+        border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+      }
+    }
+  }
+
+  div.zoom-settings {
+    display: flex;
+
+    div.button.plus,
+    div.button.minus {
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+      margin: 0;
+    }
+  }
+
+  div.dropup {
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    div.dropupbutton {
+      background-color: #ffffff;
+      width: 70px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      user-select: none;
+
+      div.content {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      div.dropupbutton-container {
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 20px;
+        display: flex;
+        align-items: center;
+
+        div.button {
+          width: 20px;
+          height: 20px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    div.input-dropupbutton {
+      background-color: #ffffff;
+      width: 70px;
+      height: 32px;
+      display: flex;
+
+      input {
+        width: 50px;
+        min-width: 50px;
+        border: none;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      div.dropupbutton-container {
+        border-left: 1px solid rgba($color: #000000, $alpha: 0.3);
+        width: 20px;
+        display: flex;
+        align-items: center;
+
+        div.button {
+          width: 20px;
+          height: 20px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    div.dropup-list {
+      background-color: #ffffff;
+      color: black;
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      width: 50px;
+      bottom: 100%;
+      user-select: none;
+
+      &.show {
+        display: flex;
+      }
+
+      div.button {
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: rgba($color: #000000, $alpha: 0.1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+div.selectionGroup {
+  position: absolute;
+  border: 2px dashed rgb(45, 45, 255);
+
+  div.resize {
+    background-color: rgba(45, 45, 255, 1);
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    box-shadow: 8px;
+    border-radius: 3px;
+
+    &:hover {
+      cursor: nw-resize;
+    }
+  }
+}

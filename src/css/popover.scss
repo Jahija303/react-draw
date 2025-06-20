@@ -1,0 +1,186 @@
+#pop-over {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #0c0c0c, $alpha: 0.8);
+
+  div.container {
+    color: black;
+    width: 50%;
+    height: 55%;
+    background-color: white;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    div.button.close {
+      position: absolute;
+      margin: 0;
+      right: 20px;
+      top: 20px;
+
+      &:hover {
+        background-image: url(../img/close-hover.svg);
+      }
+    }
+
+    div.setting {
+      display: flex;
+      position: relative;
+      margin: 0 20px 15px 0;
+      padding: 15px 10px 0 10px;
+      border-top: 1px solid rgba($color: #0c0c0c, $alpha: 0.2);
+
+      input {
+        width: 63px;
+        height: 25px;
+        border: 1px solid gray;
+        padding: 0 0 0 5px;
+        outline: none;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+      }
+
+      div.dropdown,
+      input {
+        margin-left: 10px;
+      }
+
+      div.inner {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+
+      div.title {
+        flex-grow: 1;
+      }
+
+      div.field {
+        display: flex;
+        align-items: center;
+      }
+
+      div.checkbox-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+
+        span {
+          flex-grow: 1;
+        }
+      }
+
+      div.value-container {
+        width: 100%;
+        margin: 5px 0 5px 5px;
+        display: flex;
+        align-items: center;
+
+        span {
+          flex-grow: 1;
+        }
+
+        input {
+          margin-right: 0;
+        }
+      }
+
+      div.dimensions {
+        div.common-dimensions {
+          margin-right: 10px;
+
+          div.button {
+            width: 70px;
+          }
+
+          div.dropdown-list {
+            div.button {
+              width: 100%;
+            }
+          }
+        }
+
+        input {
+          margin-right: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      div.page-orientation {
+        div.orientation {
+          div.button {
+            width: 90px;
+          }
+
+          div.dropdown-list {
+            div.button {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      div.drawing-area {
+        div.area {
+          div.button {
+            width: 100px;
+          }
+
+          div.dropdown-list {
+            div.button {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      div.grid {
+        input {
+          margin-right: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        div.field {
+          flex-direction: column;
+          width: 150px;
+        }
+      }
+
+      div.margin {
+        input {
+          margin-right: 3px;
+        }
+
+        div.checkboxes {
+          display: flex;
+          flex-direction: column;
+          margin: 0 40px;
+        }
+
+        div.values {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

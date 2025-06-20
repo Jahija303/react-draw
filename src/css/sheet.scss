@@ -1,0 +1,31 @@
+#sheet {
+  border: 1px solid rgba($color: #0c0c0c, $alpha: 0.3);
+  background-color: white;
+  z-index: 0;
+  position: absolute;
+
+  &.grabbing {
+    cursor: grab;
+  }
+
+  svg.grid,
+  svg.margins {
+    fill: none;
+    position: absolute;
+  }
+
+  svg.grid line {
+    stroke-width: 1px;
+    stroke: rgba($color: #000000, $alpha: 0.2);
+  }
+
+  svg.margins rect,
+  svg.margins line {
+    stroke-width: 1px;
+    stroke: rgba($color: #ff0000, $alpha: 0.8);
+    stroke-dasharray: 7 5;
+  }
+  svg.margins line {
+    stroke-dasharray: 2 2;
+  }
+}

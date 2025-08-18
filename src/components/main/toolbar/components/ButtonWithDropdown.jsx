@@ -1,6 +1,6 @@
 import { useState, useReducer } from "react";
 
-export const ButtonWithDropdown = ({firstInGroup, disabled, buttons}) => {
+export default function ButtonWithDropdown({firstInGroup, disabled, buttons}) {
   /** Set the default button state */
   const [defaultButton, setDefaultButton] = useState(0)
 

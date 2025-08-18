@@ -1,6 +1,6 @@
 import { useRecoilState }                                             from "recoil";
 import { useState }                                                   from "react";
-import { Button }                                                     from "../../../toolbar/components/Button";
+import Button from "../../../toolbar/components/Button";
 import { zoomLevels }                                                 from "../../../../../util/util.config";
 import { zoomLevelStateReducer }                                      from "../../../../../state/DisplayState";
 

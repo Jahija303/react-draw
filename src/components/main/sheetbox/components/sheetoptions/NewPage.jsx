@@ -1,5 +1,5 @@
 import { useSetRecoilState }                                        from 'recoil';
-import { Button }                                                   from "../../../toolbar/components/Button"
+import Button from  "../../../toolbar/components/Button"
 import { numberOfPagesSelector }                                    from '../../../../../state/DocumentState';
 
 export const NewPage = () => {

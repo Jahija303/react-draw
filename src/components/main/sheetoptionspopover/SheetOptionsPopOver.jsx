@@ -19,7 +19,7 @@ import {
 import { sheetOptionsPopoverState } from "../../../state/SheetOptionsState";
 import { useEffect } from "react";
 
-export const SheetOptionsPopOver = () => {
+export default function SheetOptionsPopOver() {
   /** Local state values */
   const [pageSize, setPageSize] = useState(pageSizes.a4.name);
   const [pageOrientation, setPageOrientation] = useState(orientations.portrait);

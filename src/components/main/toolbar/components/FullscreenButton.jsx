@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Button } from "./Button";
+import Button from "./Button";
 
-export const FullscreenButton = () => {
+export default function FullscreenButton() {
   const [fullscreen, updateFullscreen] = useState( false)
 
   /** Set the fullscreen based on app interaction */

@@ -1,6 +1,6 @@
 import { useRecoilState, useRecoilValue }                                 from "recoil";
 import { useState }                                                       from "react";
-import { Button }                                                         from "../../../toolbar/components/Button";
+import Button from "../../../toolbar/components/Button";
 import { currentPageStateReducer }                                        from "../../../../../state/DocumentState";
 import { numberOfPagesSelector }                                          from "../../../../../state/DocumentState";
 

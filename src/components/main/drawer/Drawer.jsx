@@ -2,7 +2,7 @@ import { useReducer }                                     from "react";
 import { Topic }                                          from "./components/Topic"
 import { topicData }                                      from "../../../util/topics";
 
-export const Drawer = () => {
+export default function Drawer() {
   const [condensed, toggleCondensed] = useReducer(condensed => !condensed, false)
   const [activeTopicId, dispatchActiveTopic] = useReducer(activeTopicReducer, 1)
 

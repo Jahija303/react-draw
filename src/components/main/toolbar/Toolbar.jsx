@@ -1,8 +1,8 @@
-import { FullscreenButton }                           from "./components/FullscreenButton"
-import { Button }                                     from "./components/Button";
-import { ButtonWithDropdown }                         from "./components/ButtonWithDropdown";
+import FullscreenButton from "./components/FullscreenButton"
+import Button from  "./components/Button";
+import ButtonWithDropdown from "./components/ButtonWithDropdown";
 
-export const Toolbar = () => {
+export default function Toolbar() {
   return (
     <div id="toolbar">
       <div className="inner">

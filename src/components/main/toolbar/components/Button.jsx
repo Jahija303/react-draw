@@ -1,4 +1,4 @@
-export const Button = ({firstInGroup, active, disabled, action, image, content, children}) => {
+export default function Button({firstInGroup, active, disabled, action, image, content, children}) {
   /** Handle button action */
   const handleClicked = e =>{
       console.log("Button Clicked with message:", action)

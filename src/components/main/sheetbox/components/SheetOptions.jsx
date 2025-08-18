@@ -1,5 +1,5 @@
 import { useSetRecoilState }                    from "recoil";
-import { Button }                               from "../../toolbar/components/Button";
+import Button from "../../toolbar/components/Button";
 import { PageNavigate }                         from "./sheetoptions/PageNavigate";
 import { ZoomSettings }                         from "./sheetoptions/ZoomSettings";
 import { OptionsToggle }                        from "./sheetoptions/OptionsToggle";

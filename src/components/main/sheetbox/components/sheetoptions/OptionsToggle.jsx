@@ -1,5 +1,5 @@
 import { useRecoilState }                       from 'recoil'
-import { Button }                               from '../../../toolbar/components/Button'
+import Button from '../../../toolbar/components/Button'
 import { 
   displayMarginState, 
   displayGridState,

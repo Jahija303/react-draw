@@ -2,7 +2,7 @@ import { useRecoilValue } from "recoil";
 import { toastIdsState } from "../../../state/ToastState";
 import { Toast } from "./components/Toast";
 
-export const ToastContainer = () => {
+export default function ToastContainer() {
   const toastIds = useRecoilValue(toastIdsState);
 
   return (

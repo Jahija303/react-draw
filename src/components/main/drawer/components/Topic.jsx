@@ -1,4 +1,4 @@
-import {DraggableButton}            from "../../toolbar/components/DragableButton"
+import { DraggableButton }            from "../../toolbar/components/DragableButton"
 import { useSetRecoilState }        from "recoil"
 import { pageElementsSelector }     from "../../../../state/DocumentState"
 

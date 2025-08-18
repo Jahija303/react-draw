@@ -1,7 +1,7 @@
 import { Sheet }                                from "./components/Sheet";
 import { SheetOptions }                         from "./components/SheetOptions";
 
-export const SheetBox = () => {
+export default function SheetBox() {
   return (
     <div id="sheetbox">
       <div id="desk">

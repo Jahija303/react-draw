@@ -1,8 +1,8 @@
-import { DraggableButton }            from "../../toolbar/components/DragableButton"
-import { useSetRecoilState }        from "recoil"
-import { pageElementsSelector }     from "../../../../state/DocumentState"
+import { DraggableButton } from "../../toolbar/components/DragableButton"
+import { useSetRecoilState } from "recoil"
+import { pageElementsSelector } from "../../../../state/DocumentState"
 
-export const Topic = ({topic, activeTopicId, dispatchActiveTopic}) => {
+export default function Topic({topic, activeTopicId, dispatchActiveTopic}) {
   const {id, title, elements} = {...topic}
   const isActive = (id === activeTopicId)
 

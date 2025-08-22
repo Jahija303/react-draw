@@ -1,12 +1,12 @@
-import { useRecoilState }                       from 'recoil'
+import { useRecoilState } from 'recoil'
 import Button from '../../../toolbar/components/Button'
 import { 
   displayMarginState, 
   displayGridState,
   snapToGridState
-}                                               from '../../../../../state/DisplayState'
+} from '../../../../../state/DisplayState'
 
-export const OptionsToggle = () => {
+export default function OptionsToggle() {
   const [displayMargin, setDisplayMargin] = useRecoilState(displayMarginState)
   const [displayGrid, setDisplayGrid] = useRecoilState(displayGridState)
   const [snapToGrid, setSnapToGrid] = useRecoilState(snapToGridState)

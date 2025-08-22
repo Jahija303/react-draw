@@ -12,7 +12,7 @@ import { drawingAreaBoundsState } from "../../../../../state/DocumentState";
 import { emptyGif } from "../../../../../util/util.config";
 import { DEFAULT_ELEMENT_STATE } from "../../../../../util/util.config";
 
-export const SelectionGroup = () => {
+export default function SelectionGroup() {
   /** Global state */
   const displayGroupSelection = useRecoilValue(displaySelectionGroupState)
   const {top, left, width, height} = useRecoilValue(selectionBoundingBox)

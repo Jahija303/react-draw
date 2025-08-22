@@ -1,12 +1,12 @@
-import { useSetRecoilState }                    from "recoil";
+import { useSetRecoilState } from "recoil";
 import Button from "../../toolbar/components/Button";
-import { PageNavigate }                         from "./sheetoptions/PageNavigate";
-import { ZoomSettings }                         from "./sheetoptions/ZoomSettings";
-import { OptionsToggle }                        from "./sheetoptions/OptionsToggle";
-import { NewPage }                              from "./sheetoptions/NewPage";
-import { sheetOptionsPopoverState }             from "../../../../state/SheetOptionsState";
+import PageNavigate                         from "./sheetoptions/PageNavigate";
+import ZoomSettings                         from "./sheetoptions/ZoomSettings";
+import OptionsToggle                        from "./sheetoptions/OptionsToggle";
+import NewPage                              from "./sheetoptions/NewPage";
+import { sheetOptionsPopoverState } from "../../../../state/SheetOptionsState";
 
-export const SheetOptions = () => {
+export default function SheetOptions() {
   /** Global state values */
   const setSheetOptionsPopoverVisible = useSetRecoilState(
     sheetOptionsPopoverState

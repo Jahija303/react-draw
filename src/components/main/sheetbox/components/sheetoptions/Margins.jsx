@@ -1,9 +1,9 @@
-import { useRecoilValue }                                               from "recoil";
-import { dimensionsReducer, pageMarginsState }                          from "../../../../../state/DocumentState";
-import { baseToPixelSelector }                                          from "../../../../../state/DisplayState";
-import { baseToUnit }                                                   from "../../../../../util/units";
+import { useRecoilValue } from "recoil";
+import { dimensionsReducer, pageMarginsState } from "../../../../../state/DocumentState";
+import { baseToPixelSelector } from "../../../../../state/DisplayState";
+import { baseToUnit } from "../../../../../util/units";
 
-export const Margins = () => {
+export default function Margins() {
   const dimensions = useRecoilValue(dimensionsReducer);
   const baseToPixel = useRecoilValue(baseToPixelSelector)
   const width = baseToUnit(dimensions.width, "mm") * baseToPixel
@@ -78,4 +78,4 @@ export const Margins = () => {
       />
     </svg>
   );
-};
+}

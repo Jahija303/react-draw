@@ -1,4 +1,4 @@
-export const Circle = ({data, dimensions}) => {
+export default function Circle({data, dimensions}) {
   const {width, height} = {...dimensions}
   const radius = width / 2
 

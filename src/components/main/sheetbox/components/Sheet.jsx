@@ -1,20 +1,20 @@
-import { useState, useEffect }                                                    from "react";
-import { useRecoilValue, useSetRecoilState, useRecoilCallback }                   from 'recoil'
-import { Grid }                                                                   from "../components/sheetoptions/Grid";
-import { Margins }                                                                from "../components/sheetoptions/Margins"
+import { useState, useEffect } from "react";
+import { useRecoilValue, useSetRecoilState, useRecoilCallback } from 'recoil'
+import Grid                                                                   from "../components/sheetoptions/Grid";
+import Margins                                                                from "../components/sheetoptions/Margins"
 import { 
   displayGridState, 
   displayMarginState, 
   pixelPerMilimiterState,
   baseToPixelSelector
-}                                                                                  from "../../../../state/DisplayState";
-import { dimensionsReducer, drawingAreaBoundsState }         from "../../../../state/DocumentState";
-import { standardPixeLPerMM }                                                      from "../../../../util/util.config"
-import { baseToUnit }                                                              from "../../../../util/units";
-import { SelectionGroup }                                                          from "./sheet/SelectionGroup";
-import { Elements } from "./sheet/Elements";
+} from "../../../../state/DisplayState";
+import { dimensionsReducer, drawingAreaBoundsState } from "../../../../state/DocumentState";
+import { standardPixeLPerMM } from "../../../../util/util.config"
+import { baseToUnit } from "../../../../util/units";
+import SelectionGroup                                                          from "./sheet/SelectionGroup";
+import Elements from "./sheet/Elements";
 
-export const Sheet = () => {
+export default function Sheet() {
   /** Global state values */
   const dimensions = useRecoilValue(dimensionsReducer)
 

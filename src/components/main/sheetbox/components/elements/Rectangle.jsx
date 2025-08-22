@@ -1,4 +1,4 @@
-export const Rectangle = ({data, dimensions}) => {
+export default function Rectangle({data, dimensions}) {
   const {width, height} = {...dimensions}
 
   return (

@@ -1,10 +1,10 @@
-import { useRecoilState }                                             from "recoil";
-import { useState }                                                   from "react";
+import { useRecoilState } from "recoil";
+import { useState } from "react";
 import Button from "../../../toolbar/components/Button";
-import { zoomLevels }                                                 from "../../../../../util/util.config";
-import { zoomLevelStateReducer }                                      from "../../../../../state/DisplayState";
+import { zoomLevels } from "../../../../../util/util.config";
+import { zoomLevelStateReducer } from "../../../../../state/DisplayState";
 
-export const ZoomSettings = () => {
+export default function ZoomSettings() {
   /** Global state values */
   const [zoomLevel, dispatchZoomLevel] = useRecoilState(zoomLevelStateReducer);
   const [zoomDropupVisible, setZoomNavigateDropup] = useState(false);
@@ -52,4 +52,4 @@ export const ZoomSettings = () => {
       />
     </div>
   );
-};
+}

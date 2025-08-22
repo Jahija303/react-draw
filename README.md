@@ -1,6 +1,6 @@
-# A web app to make buisiness drawings
+# A web app for business drawings
 
-# Next steps
+# Steps
 
 - Make a static layout, without content, just different background colors
   - symbol row with symbols and full screen function
@@ -24,7 +24,7 @@
   - make it movable
   - make it react on zoom/page size
 
-# Symbol row
+## Symbol row
 
 - uses the full with
 - has a full screen button at the right end, that is allways visible even when not all symbols fit the page width
@@ -35,7 +35,7 @@
   - arrows and lines (each with drop down to select a style)
   - basic elements (image, text box)
 
-# tools drawer
+## Tools drawer
 
 - group all tools into topics
 - each group has a title and at least one tool
@@ -47,7 +47,7 @@
   - dense state; topic titles are not visible; all tools are aligned vertically
   - there is a button at the top right of the drawer to switch between both states
 
-# Sheet with options line
+## Sheet with options line
 
 - at the bottom of the sheet section is an always visible sheet options line, where the properties of the sheets can be set and options for display may be changed
 - sheet options:

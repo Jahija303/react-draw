@@ -1,10 +1,10 @@
-import { useRecoilState, useRecoilValue }                                 from "recoil";
-import { useState }                                                       from "react";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { useState } from "react";
 import Button from "../../../toolbar/components/Button";
-import { currentPageStateReducer }                                        from "../../../../../state/DocumentState";
-import { numberOfPagesSelector }                                          from "../../../../../state/DocumentState";
+import { currentPageStateReducer } from "../../../../../state/DocumentState";
+import { numberOfPagesSelector } from "../../../../../state/DocumentState";
 
-export const PageNavigate = () => {
+export default function PageNavigate() {
   /** Global state values */
   const [currentPage, dispatchCurrentPage] = useRecoilState(currentPageStateReducer);
   const numberOfPages = useRecoilValue(numberOfPagesSelector);
@@ -70,4 +70,4 @@ export const PageNavigate = () => {
       />
     </div>
   );
-};
+}

@@ -1,7 +1,7 @@
 import { useRecoilValue, useRecoilCallback, useSetRecoilState } from "recoil";
 import { toastState, toastIdsState } from "../../../../state/ToastState";
 
-export const Toast = ({ id }) => {
+export default function Toast({ id }) {
   const setToastIds = useSetRecoilState(toastIdsState);
   const { message, visible } = useRecoilValue(toastState(id));
 
@@ -20,4 +20,4 @@ export const Toast = ({ id }) => {
       </div>
     )
   }
-};
+}

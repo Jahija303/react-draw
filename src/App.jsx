@@ -1,6 +1,6 @@
 import "./App.scss";
 import { RecoilRoot } from "recoil"
-import { Screen } from "./components/main/Screen";
+import Screen from "./components/main/Screen";
 import { fpsCounter } from "./util/util";
 
 fpsCounter()

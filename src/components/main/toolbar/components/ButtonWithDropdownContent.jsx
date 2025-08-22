@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 
-export const ButtonWithDropdownContent = ({firstInGroup, disabled, contentArray, currentContentState}) => {
+export default function ButtonWithDropdownContent({firstInGroup, disabled, contentArray, currentContentState}) {
   const dropdownReducer = (isOpen, action) => {
     switch(action.type) {
       case "toggle":
@@ -78,4 +78,4 @@ export const ButtonWithDropdownContent = ({firstInGroup, disabled, contentArray,
         }
     </div>
   )
-};
+}

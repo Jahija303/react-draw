@@ -1,4 +1,4 @@
-export const PopOver = ({children, setVisible}) => {
+export default function PopOver({children, setVisible}) {
   return (
     <div id="pop-over">
       <div className="container">
@@ -7,4 +7,4 @@ export const PopOver = ({children, setVisible}) => {
       </div>
     </div>
   )
-};
+}

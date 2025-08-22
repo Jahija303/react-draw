@@ -1,6 +1,6 @@
-import { useReducer }                                     from "react";
-import { Topic }                                          from "./components/Topic"
-import { topicData }                                      from "../../../util/topics";
+import { useReducer } from "react";
+import Topic from "./components/Topic"
+import { topicData } from "../../../util/topics";
 
 export default function Drawer() {
   const [condensed, toggleCondensed] = useReducer(condensed => !condensed, false)

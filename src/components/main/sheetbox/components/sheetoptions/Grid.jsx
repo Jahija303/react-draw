@@ -1,9 +1,9 @@
-import { useRecoilValue }                                   from "recoil";
-import { baseToPixelSelector, gridSizeState }               from "../../../../../state/DisplayState";
-import { dimensionsReducer }                                from "../../../../../state/DocumentState";
-import { baseToUnit }                                       from "../../../../../util/units";
+import { useRecoilValue } from "recoil";
+import { baseToPixelSelector, gridSizeState } from "../../../../../state/DisplayState";
+import { dimensionsReducer } from "../../../../../state/DocumentState";
+import { baseToUnit } from "../../../../../util/units";
 
-export const Grid = () => {
+export default function Grid() {
   const dimensions = useRecoilValue(dimensionsReducer);
   const baseToPixel = useRecoilValue(baseToPixelSelector)
   const width = baseToUnit(dimensions.width, "mm") * baseToPixel
@@ -32,4 +32,4 @@ export const Grid = () => {
       {gridLines}
     </svg>
   );
-};
+}

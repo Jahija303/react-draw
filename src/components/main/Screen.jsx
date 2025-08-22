@@ -4,7 +4,7 @@ import SheetOptionsPopOver from "./sheetoptionspopover/SheetOptionsPopOver"
 import SheetBox from "./sheetbox/SheetBox"
 import ToastContainer from "./toast/ToastContainer"
 
-export const Screen = () => {
+export default function Screen() {
   return (
     <div id="screen">
       <Toolbar/>

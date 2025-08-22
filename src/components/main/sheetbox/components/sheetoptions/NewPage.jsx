@@ -1,8 +1,8 @@
-import { useSetRecoilState }                                        from 'recoil';
+import { useSetRecoilState } from 'recoil';
 import Button from  "../../../toolbar/components/Button"
-import { numberOfPagesSelector }                                    from '../../../../../state/DocumentState';
+import { numberOfPagesSelector } from '../../../../../state/DocumentState';
 
-export const NewPage = () => {
+export default function NewPage() {
   const addPage = useSetRecoilState(numberOfPagesSelector)
 
   return (

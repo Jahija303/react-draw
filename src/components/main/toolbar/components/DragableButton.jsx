@@ -5,11 +5,10 @@ import {
   drawingAreaBoundsState,
   unitState
 } from "../../../../state/DocumentState";
-import { DEFAULT_ELEMENT_STATE } from "../../../../util/util.config";
-import { baseToUnit, unitToBase } from "../../../../util/units";
 import { baseToPixelSelector } from "../../../../state/DisplayState";
 import { newToastSelector } from "../../../../state/ToastState";
-import { emptyGif } from "../../../../util/util.config";
+import { baseToUnit, unitToBase } from "../../../../util/units";
+import { DEFAULT_ELEMENT_STATE, emptyGif } from "../../../../util/util.config";
 import { difference } from "../../../../util/util";
 
 export const DraggableButton = ({

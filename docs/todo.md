@@ -4,6 +4,10 @@
 
 [x] Check if changing the position and size of one object on the sheet re-renders everything
 [x] Why the drawer re renders each time anything else is done
+[ ] Delete an element
+[ ] Fix lines dropdown
+[ ] Highlight grouped elements with another border
+[ ] Deselect group if clicked outside group
 [ ] How does changing sheet size affect elements in sheet (if sheet is less then what it was)
 [ ] Delete a page
 [ ] Fix snap to grid

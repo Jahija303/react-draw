@@ -50,6 +50,21 @@ export const selectedElementsSelector = selector({
         }
         set(selectedElementsState, [action.id])
         break;
+      case "delete":
+        console.log("deleting items from array" + selectedElements)
+        if (action.id) {
+          // Delete specific element: remove from selection and reset element atom
+          const newList = selectedElements.filter(id => id !== action.id)
+          set(selectedElementsState, newList)
+          set(elementFamily(action.id), { ...DEFAULT_ELEMENT_STATE })
+        } else {
+          // Delete all selected elements: reset all element atoms and clear selection
+          selectedElements.forEach(id => {
+            set(elementFamily(id), { ...DEFAULT_ELEMENT_STATE })
+          })
+          set(selectedElementsState, [])
+        }
+        break;
       default:
         return
     }

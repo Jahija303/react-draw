@@ -13,6 +13,7 @@ import { standardPixeLPerMM } from "../../../../util/util.config"
 import { baseToUnit } from "../../../../util/units";
 import SelectionGroup                                                          from "./sheet/SelectionGroup";
 import Elements from "./sheet/Elements";
+import { selectedElementsSelector } from "../../../../state/ElementState";
 
 export default function Sheet() {
   /** Global state values */
@@ -22,12 +23,30 @@ export default function Sheet() {
   const displayMargin = useRecoilValue(displayMarginState)
   const baseToPixel = useRecoilValue(baseToPixelSelector)
   const setPixelPerMilimiter = useSetRecoilState(pixelPerMilimiterState)
+  const selectedElements = useRecoilValue(selectedElementsSelector)
+  const dispatchSelectedElements = useSetRecoilState(selectedElementsSelector)
 
   /** Local state values */
   const [isSheetMoving, setIsSheetMoving] = useState(false)
   const [sheetBoxDimensions, setSheetBoxDimenions] = useState({top: 0, left: 0, width: 0, height: 0})
   const [pointerStartPosition, setPointerStartPosition] = useState({top: 0, left: 0})
   const [sheetPosition, setSheetPosition] = useState({top: 20, left: 20})
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Delete" || e.key === "Del") {
+        if (selectedElements.length > 0) {
+          dispatchSelectedElements({ type: "delete" })
+        }
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    }
+  }, [selectedElements, dispatchSelectedElements])
 
   useEffect(() => {
     const resolutionChangeListener = (e) => {

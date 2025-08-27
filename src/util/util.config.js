@@ -12,6 +12,7 @@ export const orientations = {
 };
 
 export const DEFAULT_ELEMENT_STATE = {
+  type: "rectangle", // Default element type
   dimensions: {
     width: 200,
     minWidth: 100,
